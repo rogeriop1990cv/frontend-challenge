@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { type } from 'os'
 import NavBar from '../components/NavBar'
 import { PropsProductCards } from '../components/ProductCards'
 import RefinePrice from '../components/RefinePrice'
