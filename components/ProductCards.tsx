@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container, Title, PhotoProduct } from "../styles/ProductCards"
+import { Container, Title, PhotoProduct, DiscountPrice, Price, Discount } from "../styles/ProductCards"
 
 export type PropsProductCards = {
   id: number,
@@ -39,7 +39,14 @@ export default function ProductCards(product: PropsProductCards) {
       <>
         <Title>{`${product.name}`}</Title>
       </>
-      <div>{`${product.price} - ${product.discount}`}</div>
+      <DiscountPrice>
+        <Price>
+        {`R$ ${product.price}`}
+        </Price>
+        <Discount>
+        {`${product.discount}% OFF`}
+        </Discount>
+      </DiscountPrice>
       <div>{`${product.priceMember}`}</div>
       <div>{`${product.price}`}</div>
       <div>

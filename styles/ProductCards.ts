@@ -36,3 +36,26 @@ export const Title = styled(Global)`
     height: 53px;
 ;
 `
+
+export const DiscountPrice = styled(Global)`
+  display: flex;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+`
+
+export const Price = styled(Global)`
+  color:  #888888;
+  text-decoration: line-through;
+  font-style: italic;
+  margin-right: 5px;
+`
+
+export const Discount = styled(Global)`
+  background-color: #F79552;
+  color: white;
+  border-radius: 5%;
+  width: 55px;
+`
+
