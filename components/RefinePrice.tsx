@@ -18,8 +18,8 @@ export default function RefinePrice() {
       <h4>Refine sua busca</h4>
       <p>Por preço</p>
       <div>
-        <input type="radio" id={'0'+fullPriceFilter[0]} name="drone" value={fullPriceFilter[0]} />
-        <label htmlFor={'0'+fullPriceFilter[0]}>Até R${fullPriceFilter[0]}</label>
+        <input type="radio" id={'0' + fullPriceFilter[0]} name="drone" value={fullPriceFilter[0]} />
+        <label htmlFor={'0' + fullPriceFilter[0]}>Até R${fullPriceFilter[0]}</label>
       </div>
       {
         slicePriceFilter.map((price, index) => (
@@ -37,3 +37,5 @@ export default function RefinePrice() {
 
   )
 }
+
+
