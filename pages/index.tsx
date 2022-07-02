@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import NavBar from '../components/NavBar'
 
 
 const Home: NextPage = () => {
@@ -8,12 +9,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Create Next App</title>
       </Head>
-
-      <main>
-        <h1>
-          Template NextJs + Typescript + styled-components + Jest
-        </h1>
-      </main>
+      <NavBar />
     </div>
   )
 }
