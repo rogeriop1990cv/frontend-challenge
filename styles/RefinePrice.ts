@@ -10,6 +10,7 @@ export const Container = styled.div`
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    margin: 0;
   }
 
   > p {

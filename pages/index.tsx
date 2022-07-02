@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import NavBar from '../components/NavBar'
 import RefinePrice from '../components/RefinePrice'
+import StoreCatalog from '../components/StoreCatalog'
 import { Content } from '../styles/Index'
 
 
@@ -13,8 +14,8 @@ const Home: NextPage = () => {
       </Head>
       <NavBar />
       <Content>
-        <RefinePrice/>
-        <div>Conteudo</div>
+        <RefinePrice />
+        <StoreCatalog />
       </Content>
     </div>
   )

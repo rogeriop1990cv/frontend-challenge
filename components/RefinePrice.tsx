@@ -34,8 +34,5 @@ export default function RefinePrice() {
         <label htmlFor={'2' + fullPriceFilter[lastItem]}>Acima de R${fullPriceFilter[lastItem]}</label>
       </div>
     </Container>
-
   )
 }
-
-
