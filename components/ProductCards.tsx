@@ -27,7 +27,7 @@ export type PropsProductCards = {
 export default function ProductCards(product: PropsProductCards) {
 
   return (
-    <>
+    <div>
       <Container>
         <PhotoProduct>
           <Image
@@ -53,9 +53,9 @@ export default function ProductCards(product: PropsProductCards) {
         <PriceNonMember>Não sócio R$ {`${product.price}`}</PriceNonMember>
         </div>
       </Container>
-      <ButtonAdd>
+      <ButtonAdd id={`${product.id}`}>
           ADICIONAR
       </ButtonAdd>
-    </>
+    </div>
   )
 }
