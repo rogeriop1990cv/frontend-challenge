@@ -6,7 +6,7 @@ import RefinePrice from '../components/RefinePrice'
 import StoreCatalog from '../components/StoreCatalog'
 import { Content } from '../styles/Index'
 
-const BASE_URL = 'https://wine-back-test.herokuapp.com/products?page=1&limit=10'
+const BASE_URL = 'https://wine-back-test.herokuapp.com/products'
 
 export async function getStaticProps() {
   const res = await fetch(BASE_URL)
@@ -24,7 +24,7 @@ type PropsHome = {
 
 const Home: NextPage<PropsHome> = ({ productsList }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -33,7 +33,7 @@ const Home: NextPage<PropsHome> = ({ productsList }) => {
         <RefinePrice />
         <StoreCatalog data={ productsList } />
       </Content>
-    </div>
+    </>
   )
 }
 

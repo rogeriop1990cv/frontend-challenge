@@ -7,7 +7,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
   height: 88px;
   `
 export const Links = styled.div`
