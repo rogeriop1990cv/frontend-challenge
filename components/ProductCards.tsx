@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { Container, Title, PhotoProduct, DiscountPrice, Price, Discount } from "../styles/ProductCards"
+import { Container, Title, PhotoProduct, DiscountPrice, Price, Discount, PriceMember, PriceNonMember } from "../styles/ProductCards"
+import ExceptionalValue from "./ExceptionalValue"
 
 export type PropsProductCards = {
   id: number,
@@ -35,7 +36,6 @@ export default function ProductCards(product: PropsProductCards) {
           layout='fixed'
         />
       </PhotoProduct>
-
       <>
         <Title>{`${product.name}`}</Title>
       </>
@@ -47,9 +47,9 @@ export default function ProductCards(product: PropsProductCards) {
         {`${product.discount}% OFF`}
         </Discount>
       </DiscountPrice>
-      <div>{`${product.priceMember}`}</div>
-      <div>{`${product.price}`}</div>
+      <PriceMember>Sócio wine <ExceptionalValue { ...product}/></PriceMember>
       <div>
+      <PriceNonMember>Não sócio R$</PriceNonMember>
         Button
       </div>
     </Container>
