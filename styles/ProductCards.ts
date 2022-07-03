@@ -4,6 +4,7 @@ const Global = styled.div`
   background-color: white;
   font-family: 'Lato', sans-serif;
   color: #1D1D1B;
+
   * {
   background: transparent;
   }
@@ -19,9 +20,8 @@ export const Container = styled(Global)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 333px;
+  height: 328px;
   width: 256px;
-  border: 1px solid red;
   text-align: center;
 `
 
@@ -70,6 +70,21 @@ export const PriceMember = styled(Global)`
 `
 
 export const PriceNonMember = styled(Global)`
-  
+  font-size: 12px;
+  font-weight: 700;
+  color: #888888;
 `
 
+export const ButtonAdd = styled.button`
+  background-color:#7EBC43;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 256px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 15px 0 30px 0;
+`

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container, Title, PhotoProduct, DiscountPrice, Price, Discount, PriceMember, PriceNonMember } from "../styles/ProductCards"
+import { Container, Title, PhotoProduct, DiscountPrice, Price, Discount, PriceMember, PriceNonMember, ButtonAdd } from "../styles/ProductCards"
 import ExceptionalValue from "./ExceptionalValue"
 
 export type PropsProductCards = {
@@ -27,31 +27,35 @@ export type PropsProductCards = {
 export default function ProductCards(product: PropsProductCards) {
 
   return (
-    <Container>
-      <PhotoProduct>
-        <Image
-          src={product.image} alt="Some alt text"
-          width={123}
-          height={170}
-          layout='fixed'
-        />
-      </PhotoProduct>
-      <>
-        <Title>{`${product.name}`}</Title>
-      </>
-      <DiscountPrice>
-        <Price>
-        {`R$ ${product.price}`}
-        </Price>
-        <Discount>
-        {`${product.discount}% OFF`}
-        </Discount>
-      </DiscountPrice>
-      <PriceMember>Sócio wine <ExceptionalValue { ...product}/></PriceMember>
-      <div>
-      <PriceNonMember>Não sócio R$</PriceNonMember>
-        Button
-      </div>
-    </Container>
+    <>
+      <Container>
+        <PhotoProduct>
+          <Image
+            src={product.image} alt="Some alt text"
+            width={123}
+            height={170}
+            layout='fixed'
+          />
+        </PhotoProduct>
+        <>
+          <Title>{`${product.name}`}</Title>
+        </>
+        <DiscountPrice>
+          <Price>
+          {`R$ ${product.price}`}
+          </Price>
+          <Discount>
+          {`${product.discount}% OFF`}
+          </Discount>
+        </DiscountPrice>
+        <PriceMember>Sócio wine <ExceptionalValue { ...product}/></PriceMember>
+        <div>
+        <PriceNonMember>Não sócio R$ {`${product.price}`}</PriceNonMember>
+        </div>
+      </Container>
+      <ButtonAdd>
+          ADICIONAR
+      </ButtonAdd>
+    </>
   )
 }
