@@ -59,3 +59,17 @@ export const Discount = styled(Global)`
   width: 55px;
 `
 
+export const PriceMember = styled(Global)`
+  display: flex;
+  align-items: baseline;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 160px;
+  height: 27px;
+`
+
+export const PriceNonMember = styled(Global)`
+  
+`
+
