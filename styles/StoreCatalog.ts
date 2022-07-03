@@ -12,4 +12,11 @@ export const Container = styled.div`
     align-items: center;
     color: #333333;
   }
+  `
+export const Catalog = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: space-between;
+
 `
